@@ -86,7 +86,7 @@ public class RomanianArabic {
                 roman_result = "C";
         } else {CheckExeptions.something_wrong();}
 
-        roman_result = negative_number?"-"+roman_result:roman_result;
+        roman_result = negative_number?"MINUSUS "+roman_result:roman_result;
         return roman_result;
     }
 
