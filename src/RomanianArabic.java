@@ -1,6 +1,7 @@
 public class RomanianArabic {
 
-    static String roman_list[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
+    static String roman_list[] = {
+        "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
     static String for_check_big_roman[] = {"I", "V", "X", "L", "C"};
 
 
@@ -9,7 +10,8 @@ public class RomanianArabic {
         for(int i = 1; i < 3; i++){
             String divided_roman[] = arr[i].split("");
             for(String big_roman: for_check_big_roman){
-                if(divided_roman.length > 0 && divided_roman[0].equals(big_roman)){ this_romans[i-1] = true; }
+                if(divided_roman.length > 0 && divided_roman[0].equals(big_roman))
+                    { this_romans[i-1] = true; }
             }
         }
         if(this_romans[0] && this_romans[1]) return true;
