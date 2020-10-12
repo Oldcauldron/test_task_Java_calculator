@@ -1,7 +1,7 @@
 public class CheckExeptions {
 
     public static void correct_arithmetic_sign(String[] letters_nums){
-        if(letters_nums.length < 2){
+        if(letters_nums.length != 2){
             throw new UnsupportedOperationException("incorrect arithmetic sign!");
         }
     }

@@ -16,6 +16,7 @@ public class StringConverter {
         String arr[] = {"", letters_nums[0], letters_nums[1], ""};
 
         for(String sign: letters){
+            if(arr[0].matches("[\\+|\\-|\\*|\\/]"))break;
             arr[0] = sign.matches("[\\+|\\-|\\*|\\/]")?sign:arr[0];
         }
 
